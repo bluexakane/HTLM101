@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Create two equal columns that floats next to each other */
+        .column {
+          float: left;
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 200px;
+          height: 240px;
+        }
+                
+        td, th {
+          border: 1px solid #000000;
+          text-align: center;
+          padding: 20px;
+        }
+                
+        tr:nth-child(even) {
+          background-color: #ffffff;
+        }
+
+        .stock {
+          color: #000000;
+        }
+
+        .stock em {
+          color: #ff0000;
+          font-weight: bold;
+        }
+
+        .addtocart {
+          width: 180px;
+          height: 30px;
+          background-color: #ffffff;
+        }
+    </style>
+<title>Shopping Cart</title>
+</head>
+<body>
+<h1>Toy Name</h1>
+<br>
+<div class="row">
+    <div class="column" style="width: 40%">
+        <br>
+        <table>
+            <tr>
+                <td>
+                    Toy Picture
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="column" style="width: 50%">
+        <p>Brand</p>
+        <p>Gender</p>
+        <p>Age</p>
+        <p>Price</p>
+        <p>Shipping Method: Cash on Delivery</p>
+        <br>
+        <p class="stock"><em>In Stock</em> / <em>Out Stock</em></p>
+        <form>
+            <label for="quantity">Quantity:</label>
+            <select name="quantity" id="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <br><br>
+            <input class="addtocart" type="submit" value="Add to Cart">
+          </form>
+    </div>
+</div>
+
+</body>
+</html>

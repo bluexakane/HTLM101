@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+        
+td, th {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 20px;
+}
+        
+tr:nth-child(even) {
+  background-color: #ffffff;
+}
+</style>
+<title>Search Page</title>
+</head>
+<body>
+
+<h1>Search Toy</h1>
+<br>
+<div class="row">
+    <div class="column" style="width: 50%">
+        <h2>Select Age</h2>
+        <select name="age" id="age" style="width: 280px">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6+">6+</option>
+        </select>
+    </div>
+    <div class="column" style="width: 50%">
+        <h2>Select Gender</h2>
+        <select name="gender" id="gender" style="width: 280px">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="neutral">Neutral</option>
+        </select>
+        <input type="submit" value="Submit">
+    </div>
+</div>
+<h3>X toy found</h3>
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+
+</body>
+</html>

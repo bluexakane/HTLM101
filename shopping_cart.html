@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Create two equal columns that floats next to each other */
+        .column {
+          float: left;
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+          height: 230px;
+        }
+                
+        td, th {
+          border: 1px solid #000000;
+          padding: 20px;
+        }
+                
+        tr:nth-child(even) {
+          background-color: #ffffff;
+        }
+
+        .toyname {
+          color: #000000;
+        }
+
+        .toyname rb {
+          font-weight: bold;
+        }
+
+        .stock {
+          color: #000000;
+        }
+
+        .stock em {
+          color: #ff0000;
+          font-weight: bold;
+        }
+
+        .addtocart {
+          width: 180px;
+          height: 30px;
+          background-color: #ffffff;
+        }
+
+        .chkout {
+          width: 250px;
+          height: 30px;
+          font-size: 15px;
+          background-color: #ffffff;
+        }
+
+        .tprice {
+          color: #000000;
+          font-weight: bold;
+        }
+
+        .tprice rt {
+          color: #ff0000;
+          font-weight: bold;
+        }
+    </style>
+<title>Shopping Cart</title>
+</head>
+<body>
+<h1>Shopping Cart</h1>
+<br>
+<div class="row">
+    <div class="column" style="width: 100%">
+        <br>
+        <table>
+            <tr>
+                <td style="text-align: left; font-weight: bold;">
+                    Items
+                </td>
+                <td style="text-align: center; font-weight: bold;">
+                    Quantity
+                </td>
+                <td style="text-align: right; font-weight: bold;">
+                    Price (THB)
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: left; vertical-align: top;">
+                    <p class="toyname"><rb>Toy Name</rb> by Brand</p>
+                    <p>Gender</p>
+                    <p>Age</p>
+                    <p class="stock"><em>In Stock</em> / <em>Out Stock</em></p>
+                    <p><a href="">Delete</a></p>
+                </td>
+                <td style="text-align: center; vertical-align: top;">
+                    <select name="quantity" id="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </td>
+                <td style="text-align: right; vertical-align: top;">
+                    100.00
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: left; vertical-align: top;">
+                    <p class="toyname"><rb>Toy Name</rb> by Brand</p>
+                    <p>Gender</p>
+                    <p>Age</p>
+                    <p class="stock"><em>In Stock</em> / <em>Out Stock</em></p>
+                    <p><a href="">Delete</a></p>
+                </td>
+                <td style="text-align: center; vertical-align: top;">
+                    <select name="quantity" id="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </td>
+                <td style="text-align: right; vertical-align: top;">
+                    100.00
+                </td>
+            </tr>
+            
+        </table>
+    </div>
+    <div class="column" style="width: 50%">
+        <p>Shipping Method: Kerry Express</p>
+        <p>Shipping Price: 150.00 THB</p>
+    </div>
+    <div class="column" style="text-size-adjust: 20px;width: 50%; text-align: right;">
+        <h2 class="tprice">Subtotal (2 Items): <rt>200.00</rt> THB</h2>
+        <h2 class="tprice">Shipping Fee: <rt>150.00</rt> THB </h2>
+        <br>
+        <input class="chkout" type="submit" value="Process to Checkout">
+    </div>
+</div>
+
+</body>
+</html>
