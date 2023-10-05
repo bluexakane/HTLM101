@@ -1,12 +1,171 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Create two equal columns that floats next to each other */
+        .column {
+          float: left;
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 95%;
+          height: 100px;
+        }
+                
+        td, th {
+          border: 1px solid #c1c1c1;
+          padding: 20px;
+        }
+                
+        tr:nth-child(even) {
+          background-color: #ffffff;
+        }
+
+        .toyname {
+          color: #000000;
+        }
+
+        .toyname rb {
+          font-weight: bold;
+        }
+
+        .stock {
+          color: #000000;
+        }
+
+        .stock em {
+          color: #ff0000;
+          font-weight: bold;
+        }
+
+        .addtocart {
+          width: 180px;
+          height: 30px;
+          background-color: #ffffff;
+        }
+
+        .chkout {
+          width: 250px;
+          height: 30px;
+          font-size: 15px;
+          background-color: #ffffff;
+        }
+
+        .tprice {
+          color: #000000;
+          font-weight: bold;
+        }
+
+        .tprice rt {
+          color: #ff0000;
+          font-weight: bold;
+        }
+
+        .pprice {
+          color: #000000;
+        }
+
+        .pprice samp {
+          color: #ff0000;
+        }
+
+        .pprice rb {
+          color: #000000;
+          font-weight: bold;
+        }
+
+        .pprice rt {
+          color: #ff0000;
+          font-weight: bold;
+        }
+
+
+    </style>
 <title>Payment Page</title>
 </head>
 <body>
-
-
-
+<h1>Payment Method</h1>
+<br>
+<div class="row">
+    <div class="column" style="width: 60%;">
+        <br>
+        <table>
+            <tr>
+                <td style="text-align: left; font-weight: bold;">
+                    Items
+                </td>
+                <td style="text-align: center; font-weight: bold;">
+                    Quantity
+                </td>
+                <td style="text-align: right; font-weight: bold;">
+                    Price (THB)
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: left; vertical-align: top;">
+                    <p class="toyname"><rb>Toy Name</rb> by Brand<br>
+                        Gender Age</p>
+                    <p class="stock"><em>In Stock</em> / <em>Out Stock</em></p>
+                </td>
+                <td style="text-align: right; vertical-align: top;">
+                    <p>1</p>
+                </td>
+                <td style="text-align: right; vertical-align: top;">
+                    100.00
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: left; vertical-align: top;">
+                    <p class="toyname"><rb>Toy Name</rb> by Brand<br>
+                        Gender Age</p>
+                    <p class="stock"><em>In Stock</em> / <em>Out Stock</em></p>
+                </td>
+                <td style="text-align: right; vertical-align: top;">
+                    <p>1</p>
+                </td>
+                <td style="text-align: right; vertical-align: top;">
+                    100.00
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="column" style="width: 35%">
+        <h2>Payment Method</h2>
+        <p class="pprice">Items(2): <samp>200.00</samp> THB<br>
+            Shipping Fee: <samp>150.00</samp> THB<br>
+            ---------------------------<br>
+            <rb>Order Total: <rt>350.00</rt> THB</rb></p>
+    </div>
+    <div class="column" style="width: 100%; font-weight: bold;">
+        <p>Select payment methods</p>
+        <input type="radio" id="credit" name="paymethod" value="credit">
+        <label for="html">Credit or Debit Cards</label><br>
+        <input type="radio" id="paypal" name="paymethod" value="paypal">
+        <label for="css">Paypal</label><br>
+        <input type="radio" id="linepay" name="paymethod" value="linepay">
+        <label for="javascript">Linepay</label>
+    </div>
+    <br>
+    <br>
+    <div class="column" style="text-size-adjust: 20px;width: 100%; text-align: right;">
+        <br>
+        <br>
+        <input class="chkout" type="submit" value="Place your Order">
+        <br>
+    </div>
+</div>
 
 </body>
 </html>

@@ -48,48 +48,59 @@
           height: 30px;
           background-color: #ffffff;
         }
+
+        .wrapper {
+          text-align: center;
+        }
+
     </style>
-<title>Shopping Cart</title>
+<title>Shipping</title>
 </head>
 <body>
-<h1>Toy Name</h1>
+<h1>Shipping Address</Address></h1>
 <br>
 <div class="row">
-    <div class="column" style="width: 40%">
-        <br>
-        <table>
-            <tr>
-                <td>
-                    Toy Picture
-                </td>
-            </tr>
-        </table>
+    <div class="column" style="width: 100%">
+      <form>
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" style="width: 100%;"><br>
+      </form>
     </div>
-    <div class="column" style="width: 50%">
-        <p>Brand</p>
-        <p>Gender</p>
-        <p>Age</p>
-        <p>Price</p>
-        <p>Shipping Method: Cash on Delivery</p>
-        <br>
-        <p class="stock"><em>In Stock</em> / <em>Out Stock</em></p>
-        <form>
-            <label for="quantity">Quantity:</label>
-            <select name="quantity" id="quantity">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-            </select>
-            <br><br>
-            <input class="addtocart" type="submit" value="Add to Cart">
-          </form>
+    <div class="column" style="width: 100%">
+      <form>
+        <label for="address1">Address 1:</label><br>
+        <input type="text" id="address1" name="address1" style="width: 100%;">
+      </form>
+    </div>
+    <div class="column" style="width: 100%">
+      <form>
+        <label for="address2">Address 2:</label><br>
+        <input type="text" id="address2" name="address2" style="width: 100%;">
+      </form>
+    </div>
+    <div class="column" style="width: 33.33%">
+      <form>
+        <label for="cityship">City:</label><br>
+        <input type="text" id="cityship" name="cityship" style="width: 95%;">
+      </form>
+    </div>
+    <div class="column" style="width: 33.33%">
+      <form>
+        <label for="provinceship">Province:</label><br>
+        <input type="text" id="provinceship" name="provinceship" style="width: 95%;">
+      </form>
+    </div>
+    <div class="column" style="width: 33.33%">
+      <form>
+        <label for="postcodeship">Post Code:</label><br>
+        <input type="text" id="postcodeship" name="postcodeship" style="width: 100%;">
+      </form>
+      <br>
+    </div>
+    <div class="wrapper" style="width: 100%;">
+      <form>
+        <input class="addtocart" type="submit" value="Add to Cart" style="width: 40%;">
+      </form>
     </div>
 </div>
 
